@@ -17,7 +17,9 @@ Route 53 for DNS configuration.
 7. [Contributing](#contributing)
 
 ## Requirements
+
 - AWS account
+- Terraform
 - AWS CLI
 - kubectl
 - eksctl
@@ -59,6 +61,9 @@ AWS Services
 - Amazon RDS: For database management.
 - Amazon Route 53: For DNS configuration.
 - AWS ALB: For load balancing.
+- AWS IAM: For control access.
+- AWS ECR: For store docker images.
+- AWS VPC: For networking configurations.
 
 ### 5. Usage and Testing
 WIP
