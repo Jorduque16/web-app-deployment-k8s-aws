@@ -7,4 +7,7 @@ resource "aws_dynamodb_table" "tf_state_dynamo_table" {
     name = "LockID"
     type = "S"
   }
+  lifecycle {
+    prevent_destroy = false
+  }
 }

@@ -5,6 +5,12 @@ terraform {
       version = "~> 5.0"
     }
   }
+  backend "s3" {
+    bucket = "{BUCKET_NAME}"
+    key = "terraform.tfstate"
+    region = "{REGION}"
+    dynamodb_table = "{DYNAMO_TABLE_NAME}"
+  }
 }
 
 # Configure the AWS Provider

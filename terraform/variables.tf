@@ -23,4 +23,7 @@ variable "aws_default_region" {
   type = string
 }
 
-
+variable "target_environment" {
+  description = "Environment abbreviation"
+  type = string
+}
